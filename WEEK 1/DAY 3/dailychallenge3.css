@@ -1,0 +1,28 @@
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ybox{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: solid 2px black;
+    margin:  20px;
+}

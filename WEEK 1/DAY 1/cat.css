@@ -1,0 +1,30 @@
+h3{ 
+    text-align: center;
+}
+    
+    p{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+.difference{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.box { 
+padding: 10px;
+}

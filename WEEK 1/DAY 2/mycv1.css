@@ -1,0 +1,126 @@
+
+.test3{
+    background-color: #e0c0ff;
+
+}
+
+
+body{
+    background-color: rgb(239, 225, 248);
+    margin-top: 0
+    
+}
+
+
+h1  {
+    text-align: center;
+    color: cornflowerblue;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    color: cornflowerblue
+}
+
+p {
+    text-align: center;
+    color: gray
+}
+img {
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.test { text-align: center;
+    color: cornflowerblue;
+
+
+}
+.test2{
+    text-align: center;
+    color: pink
+    
+}
+ul{
+    color: gray;
+}
+
+.container2{
+   
+    text-align: center;
+
+
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #e0c0ff;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+    text-align: center;
+    margin:auto
+  }
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #e0c0ff;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+    text-align: center;
+    margin: auto
+    
+  }
+
+#rcorners3 {
+    border-radius: 25px;
+    background:#e0c0ff;
+    padding: 2Opx; 
+    width: 250px;
+    height: 200px;  
+    text-align: center;
+    margin:auto
+  }
+
+ 
+  #rcorners4 {
+    border-radius: 0px;
+    background: #494052;
+    padding: 20px; 
+    width: 200px;
+    height: 250px;  
+    text-align: center;
+    align-items: start;
+    justify-self: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    float: left;
+  }
+  #rcorners4: :first-child{
+      align-self:center
+  }
+
+  #rcorners5 {
+    border-radius: 0px;
+    background: #494052;
+    padding: 20px; 
+    width: 200px;
+    height: 250px;  
+    text-align: center;
+    align-items: center ;
+    justify-self: center;
+    justify-content: space-between;
+    flex-direction: row;
+    float: right;
+  }
+  #rcorners5: :first-child{
+    align-self:center
+
+   

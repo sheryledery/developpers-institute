@@ -1,0 +1,24 @@
+@media screen and (max-width: 400px) and (max-width: 1200px)  {  
+    
+}
+
+body {
+    background-image: url("ironman6.jpeg");
+    background-color: #cccccc;
+    text-align: center;
+    color: beige
+    
+   }
+   a {
+    color: beige
+   }
+
+   .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+​
+}
+.salepoint{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+section {
+    border: 1px solid orange; 
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+
+}
+
+#div1 {
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(49, 135, 189);
+    background-color:rgb(49, 135, 189);
+    width:200px;
+    height: 120px;
+    align-items: center;
+
+
+}
+
+#div2 {
+    color: white;
+    text-align: center;
+    border: 1px solid lightblue;
+    background-color:lightblue;
+    width: 600px;
+    height: 120px;
+    padding: center;
+   
+}
+
+#div3 {
+    color: white;
+    text-align: center;
+    border: 1px solid orangered;
+    background-color: orangered;
+    width: 600px;
+    height:120px;
+}
+@media screen
+ and (min-width: 600px)
+ and (max-width: 1600px) {
+}
