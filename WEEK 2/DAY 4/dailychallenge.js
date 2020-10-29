@@ -1,10 +1,13 @@
-prompt("Tell me something")
-let words = "Tell me something",
-wordArray = words.split(' ');
 
-console.log(wordArray);
-console.log("tell",'\n',"me", '\n',"something")
 
-for(var i=1; i<=4; i++){
-    console.log("*".repeat(i));
+ function  starWords(){
+     let getsentence = prompt("What do you like most -separate by coma");
+     let splitw = getsentence.split(' , ') // .join('\r\n');
+     let border = "*".repeat(getsentence.length)
+     console.log(border)
+     for(let word of getsentence ){
+         console.log("*", " ", word, " ".repeat(getsentence.length - word.length - 3), "*")
+     }
+     console.log(border)
  }
+ starWords()
