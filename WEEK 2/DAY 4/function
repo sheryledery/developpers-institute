@@ -1,0 +1,10 @@
+//defining a function
+function workingWithArray (list, name) {
+    console.log(list)
+    for(){
+        console.log()
+    }
+}
+
+//calling a function
+workingWithArray(["blue", "red", "yellow"], "David")
