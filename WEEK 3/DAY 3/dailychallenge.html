@@ -1,0 +1,27 @@
+<!-- Daily Challenge : Show Only The Letters
+Create an input type text that get/show only letters.
+Hint/Tip: use keypress event listener and remove any character that is not a letter. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/data.php" method="get">
+    <input type="text" name="onlyletters" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+    placeholder="Enter only letters">
+    <input type="submit" value="submit">
+    </form>
+    <script>
+
+
+// function alphaOnly(event) {
+//   var key = event.keyCode;
+//   return ((key >= 65 && key <= 90) || key == 8);
+// };
+    </script>
+</body>
+</html>

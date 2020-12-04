@@ -1,0 +1,441 @@
+body{
+    background-color: lightgoldenrodyellow;
+    
+}
+
+.h1{
+    background-color: brown;
+    color: blue;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: rgb(214, 81, 81);
+    border-color:solid  red 2px;
+    height:120px;
+    width:40%;
+    margin: auto;
+}
+
+
+#intro {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top : 20px;
+    border-color: brown;
+    animation-name: introFade;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes introFade {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0.7;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+
+
+
+#box_top {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    background-image: url(img/stress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: stress;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+    margin-left: 0;
+    
+}
+
+@keyframes stress {
+    0%    {left:+100px; top:200px;}
+    10%   {left:50px; top:0px;}
+    20%   {left:10px; top:180px;}
+    30%   {left:150x; top:40px;}
+    40%   {left:50px; top:20px;}
+    50%   {left:200px; top:0px;}
+    60%   {left:60px; top:20px;}
+    70%   {left:0px; top:200px;}
+    80%   {left:10px; top:0px;}
+    90%   {left:90px; top:20px;}
+    100%  {left:66px; top:20px;}
+    110%  {left:0px; top:100px;}
+    120%  {left:0px; top:0px;}
+    100%  {left:57px; top:20px;}
+    110%  {left:0px; top:20px;}
+    120%  {left:12px; top:3px;}
+}
+
+
+
+
+/* ----------------------------------stay_calm */
+
+#stay_calm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 570px;
+    margin: auto;
+    position: absolute;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+p {
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 45px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+p {
+  animation: animated-text 5s steps(50,end) 5s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 600px;}
+}
+
+
+/* --------------------exercice_---------------------- */
+
+.exercice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+h2 {
+  /* white-space: nowrap; */
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 45px;
+  color: rgba(133, 39, 39, 0.7);
+}
+
+h2 {
+  animation: animated-text 1s steps(50,end) 9s 1 normal both;
+
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 900px;}
+}
+
+/* --------------------------h3 */
+
+.instuction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+
+h3 {
+  /* white-space: nowrap; */
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 45px;
+  color: rgba(133, 39, 39, 0.7);
+  /* width: 500px; */
+}
+
+h3 {
+  animation: animated-text2 1s steps(50,end) 10s 1 normal both;
+
+}
+
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+
+/* ----------------------------------- */
+
+
+
+.ex_practice {
+    display : flex;
+    flex-direction: column;
+    justify-items:  center;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    animation-name: exFade;
+    animation-delay: 200s;
+    animation-fill-mode: forwards;
+    position: relative;
+    }
+
+@keyframes exFade {
+    0% {
+    opacity:1;
+  }
+  100% {
+  opacity:0;
+  }
+}
+
+
+
+.ex_practice #breathing_technique {
+    width: 300px;
+    height: 200px;
+    padding: 20px; 
+    margin: 50px auto;
+    border: 1px solid #d1d1d1;
+    animation: breathing 20s 20s linear 10 ;
+    font-size: 24px;
+    background: #5885cb;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 50%;
+    text-align: center;  
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.ex_practice span::before { 
+  content: ''; 
+  animation: breathing 20s 20s linear 10; 
+  /* padding-left: 10px;  */
+  font-size: 5rem;
+  animation-fill-mode: forwards;
+  
+} 
+
+
+
+@-webkit-keyframes breathing {
+  1% {
+    content: 'IN';
+    -webkit-transform: scale(0.10);
+    transform: scale(0.10);
+  }
+
+  5% {
+    content: '1';
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+  }
+
+  10% {
+    content: '2';
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  15% {
+    content: '3';
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  20% {
+    content: '4';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  /* holding 7 sec  */
+  22% {
+    content: 'HOLD';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    content: '1';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+  30% {
+    content: '2';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  35% {
+    content: '3';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    content: '4';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  47% {
+    content: '5';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  52% {
+    content: '6';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  59% {
+    content: '7';
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+/* EXHALE */
+  
+  60% {
+    content: "OUT";
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  
+  
+  65% { 
+    content: '1';
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  70% {
+    content: '2';
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  
+  75% {
+    content: '3';
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  
+  80% {
+    content: '4';
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  
+  85% {
+    content: '5';
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  
+  90% {
+    content: '6';
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  
+  95% {
+    content: '7';
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  
+  100% {
+    content: '8';
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+}
+
+
+
+
+/* ----------------chill */
+
+
+
+
+
+
+
+
+
+ /* ----------------timer breathing 1------------------- */ */ */
+
+.breath_timer_band {
+    display: flex;
+    height: 30px;
+    width: 80%;
+    background-color: lightgreen;
+}
+
+
+#breathing_line_curser{animation-timing-function: linear;}
+
+#breathing_line_curser {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 200s 20s 1 ;
+  }
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 90%;}
+  }
+
+/* -----------------CHLL */
+
+
+.end_img{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+  .chill {
+    display: flex;
+    background-image: url("img/chill.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+  }

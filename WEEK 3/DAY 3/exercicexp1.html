@@ -1,0 +1,85 @@
+
+<!-- 
+Exercise 1 : Move The Box
+Move the box from left to right
+Tip: use setInterval
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"></div>
+        </div>
+    </body>
+    </html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+</head>
+<body>
+    <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"></div>
+        </div>
+
+        <script>
+          
+            function myMove(){
+                var container = document.getElementById("container");
+                var animate = document.getElementById("animate");
+                var id = setInterval(frame, 5);
+                var maxDistToTravel = container.offsetWidth - animate.offsetWidth;
+                var pos = 0;
+                var end = maxDistToTravel;
+                var direction = 1;
+
+                function frame() { 
+   if (pos === end) {
+     direction *= -1; // reverses current direction
+     end = Math.abs(maxDistToTravel - end); 
+   }
+   pos += direction;
+   animate.style.top = pos + "px";
+   animate.style.left = pos + "px";
+  }
+            }
+
+        </script>
+</body>
+</html>

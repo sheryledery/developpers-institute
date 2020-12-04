@@ -1,0 +1,61 @@
+<!-- Daily Challenge : Tell The Story
+This webpage has the start of a Mad Libs game.
+If you’ve never played it, that’s a game where you fill in a bunch of blanks inputs with different word types (ie : noun, adjective, verb), and then a story is generated based on those words, and sometimes the story is surprisingly funny.
+In this step, you’re going to finish the game logic in the event listener (check out the script tag below).
+
+Follow these steps :
+
+-find the value of each of the input
+-write out a story that uses each of the values
+-Make sure you check the console for errors when you play the game.
+ -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+        let libButton = document.getElementById('lib-button');
+        let libIt = function() {
+            let storyDiv = document.getElementById("story");
+            let noun = document.getElementById("noun").value;
+        // noun = noun.value;
+        let adjective= document.getElementById("adjective").value;
+        // adjective = adjective.value;
+        let person = document.getElementById("person").value;
+        // adjective = adjective.value;
+        storyDiv.innerHTML = ("The" + " " + noun + " " +  "is" + " " + adjective +" " + "so" + " "+ person +" " + "went crazy !");
+        };
+        libButton.addEventListener('click', libIt);
+
+
+        
+
+
+
+
+
+    
+       
+    </script>
+
+ </body>
+</html>
