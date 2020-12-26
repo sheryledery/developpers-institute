@@ -1,0 +1,28 @@
+{% extends "partials/base.html" %}
+
+
+{% block content %}
+<br><br>
+<table width="700" border=1 style="border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>Title </th> <th>Director </th> <th> Release Date </th> <th>Category </th> <th>Nationality </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for element in datafilm %}
+            <tr>
+                <td>{{ element.title }}</td>
+                <td>{% for directors in element.director.all  %} {{ directors }} {% endfor%} </td>
+                <td>{{element.release_date }}</td>
+                <td>{% for categories in element.category.all  %} {{ categories }} {% endfor%} </td>
+                <td>{{ element.created_in_country }}</td>
+                
+            </tr>
+        {% endfor %}
+    </tbody>
+</table> <br><br><br>
+<a href="{% url 'addfilm' %}">Add Film</a>
+<a href="{% url 'adddirector' %}">Add Director</a>
+
+{% endblock %}

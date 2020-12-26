@@ -1,0 +1,12 @@
+{% include "partials/navbar.html" %}
+
+{% block content %}
+{% endblock %}
+
+<h1 style="color: purple">Add Director</h1>
+
+<form method="POST" class = "post-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-success">Add</button>
+</form>

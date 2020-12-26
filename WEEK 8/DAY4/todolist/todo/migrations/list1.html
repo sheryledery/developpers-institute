@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>To Do List</title>
+<h3>To Do List Profile: </h3>
+<table class ="table table-light table bordered table-striped">
+<body>
+    <tr>
+        <th>Title</th>
+        <td>{{object.Todo.title}}</td>
+    </tr>
+    <tr>
+        <th>Details</th>
+        <td>{{object.Todo.details}}</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>{{object.Todo.has_been_done}}</td>
+    </tr>
+    <tr>
+        <th>Date</th>
+        <td>{{object.Todo.date_creation}}</td>
+    </tr>
+    <tr>
+        <th>Date Completion</th>
+        <td>{{object.Todo.date_completion}}</td>
+    </tr>
+    <tr>
+        <th>Deadline Date</th>
+        <td>{{object.Todo.deadline_date}}</td>
+    </tr>
+    <tr>
+        <th>Picture</th>
+        <td>
+        {% if object.image %}
+        <img src ={{object.image}}/>
+        {% endif %}
+        </td>
+    </tr>
+</body>
+</table>
+</html>

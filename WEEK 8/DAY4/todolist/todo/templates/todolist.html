@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    
+    <h1>TO DO LIST :</h1>
+    
+    {% if todos %}
+    
+    {% for todo in todos %}
+    <a href="{% url 'todos' id=todos.id %}">
+        <h5>{{todos.text}}</h5>
+    </a>
+    {% endfor%}
+    <hr>
+    
+    {% endif%}
+    
+    <a href="{% url 'todos' %}" class="btn btn-primary" >Back to Home</a>
+    <a href="{% url 'addnewtask' %}" class="btn btn-danger" >Add Task</a>
+</div>
+{% endblock %}
